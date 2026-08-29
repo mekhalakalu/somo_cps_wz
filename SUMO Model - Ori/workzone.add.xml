@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additional>
+
+    <!-- Downstream lane closure -->
+    <rerouter id="workZone"
+              edges="33654598_wz_downstream">
+
+        <interval begin="0" end="3600">
+            <closingLaneReroute id="33654598_wz_downstream_0"/>
+        </interval>
+
+    </rerouter>
+
+
+
+
+    <!-- ================================= -->
+    <!-- UPSTREAM DETECTORS -->
+    <!-- ================================= -->
+
+    <inductionLoop id="det_upstream_0"
+                   lane="33654598_wz_upstream_0"
+                   pos="250"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_upstream_1"
+                   lane="33654598_wz_upstream_1"
+                   pos="250"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_upstream_2"
+                   lane="33654598_wz_upstream_2"
+                   pos="250"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_upstream_3"
+                   lane="33654598_wz_upstream_3"
+                   pos="250"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+
+    <!-- ================================= -->
+    <!-- PRE-TAPER DETECTORS -->
+    <!-- ================================= -->
+
+    <inductionLoop id="det_pretaper_0"
+                   lane="33654598_wz_alert_0"
+                   pos="180"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_pretaper_1"
+                   lane="33654598_wz_alert_1"
+                   pos="180"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_pretaper_2"
+                   lane="33654598_wz_alert_2"
+                   pos="180"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_pretaper_3"
+                   lane="33654598_wz_alert_3"
+                   pos="180"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+
+    <!-- ================================= -->
+    <!-- DOWNSTREAM DETECTORS -->
+    <!-- ================================= -->
+
+    <inductionLoop id="det_downstream_1"
+                   lane="33654598_wz_downstream_1"
+                   pos="250"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_downstream_2"
+                   lane="33654598_wz_downstream_2"
+                   pos="250"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_downstream_3"
+                   lane="33654598_wz_downstream_3"
+                   pos="250"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+
+    <!-- ================================= -->
+    <!-- MERGING ZONE CONGESTION -->
+    <!-- ================================= -->
+
+    <laneAreaDetector id="workzone_congestion"
+                      lane="33654598_wz_merging_0"
+                      pos="0"
+                      endPos="120"
+                      freq="900"
+                      file="lanearea_output.xml"/>
+    <laneAreaDetector id="wz_merging_lane1"
+                  lane="33654598_wz_merging_1"
+                  pos="0"
+                  endPos="120"
+                  freq="900"
+                  file="lanearea_output.xml"/>
+
+   <laneAreaDetector id="wz_merging_lane2"
+                  lane="33654598_wz_merging_2"
+                  pos="0"
+                  endPos="120"
+                  freq="900"
+                  file="lanearea_output.xml"/>
+
+   <laneAreaDetector id="wz_merging_lane3"
+                  lane="33654598_wz_merging_3"
+                  pos="0"
+                  endPos="120"
+                  freq="900"
+                  file="lanearea_output.xml"/>
+
+	
+
+
+</additional>
