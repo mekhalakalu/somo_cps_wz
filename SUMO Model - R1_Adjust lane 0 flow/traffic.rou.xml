@@ -17,7 +17,6 @@
 
     <route id="I75_SB_workzone"
            edges="33654598_wz_upstream
-		  J_rampmergedone
                   33654598_wz_alert
                   33654598_wz_merging
                   33654598_wz_downstream"/>
