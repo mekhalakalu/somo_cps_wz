@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-08-31T14:51:15.647227-05:00 by Eclipse SUMO GUI 1.27.1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\kaluarms\OneDrive - University of Cincinnati\Mage Weda\Dissertation\Methodology\Simulation\SUMO Model\SUMO Model - R2_Adjust the speed\osm.net.xml"/>
+        <route-files value="C:\Users\kaluarms\OneDrive - University of Cincinnati\Mage Weda\Dissertation\Methodology\Simulation\SUMO Model\SUMO Model - R2_Adjust the speed\traffic.rou.xml"/>
+        <additional-files value="C:\Users\kaluarms\OneDrive - University of Cincinnati\Mage Weda\Dissertation\Methodology\Simulation\SUMO Model\SUMO Model - R2_Adjust the speed\workzone.add.xml"/>
+    </input>
+
+</sumoConfiguration>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+
+    <!-- Passenger vehicle -->
+    <vType id="passenger"
+           vClass="passenger"
+           accel="2.6"
+           decel="4.5"
+           sigma="0.5"
+           length="5"
+           minGap="2.5"
+           maxSpeed="30"/>
+
+
+    <!-- Route through the smart work zone -->
+
+    <route id="I75_SB_workzone"
+           edges="33654598_wz_upstream
+                  33654598_wz_alert
+                  33654598_wz_merging
+                  33654598_wz_downstream"/>
+
+
+    <!-- 6:45–7:00 AM -->
+
+    <flow id="I75_0645"
+          type="passenger"
+          route="I75_SB_workzone"
+          begin="0"
+          end="900"
+          vehsPerHour="4224"
+          departLane="free"
+          departSpeed="max"/>
+
+
+    <!-- 7:00–7:15 AM -->
+
+    <flow id="I75_0700"
+          type="passenger"
+          route="I75_SB_workzone"
+          begin="900"
+          end="1800"
+          vehsPerHour="4008"
+          departLane="free"
+          departSpeed="max"/>
+
+
+    <!-- 7:15–7:30 AM -->
+
+    <flow id="I75_0715"
+          type="passenger"
+          route="I75_SB_workzone"
+          begin="1800"
+          end="2700"
+          vehsPerHour="3976"
+          departLane="free"
+          departSpeed="max"/>
+
+
+    <!-- 7:30–7:45 AM -->
+
+    <flow id="I75_0730"
+          type="passenger"
+          route="I75_SB_workzone"
+          begin="2700"
+          end="3600"
+          vehsPerHour="4264"
+          departLane="free"
+          departSpeed="max"/>
+
+</routes>
