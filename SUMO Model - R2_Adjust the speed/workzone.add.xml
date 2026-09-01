@@ -2,6 +2,7 @@
 
 <additional>
 
+
     <!-- Downstream lane closure -->
     <rerouter id="workZone"
               edges="33654598_wz_downstream">
@@ -11,7 +12,6 @@
         </interval>
 
     </rerouter>
-
 
 
 
@@ -45,28 +45,28 @@
 
 
     <!-- ================================= -->
-    <!-- PRE-TAPER DETECTORS -->
+    <!-- Alert Zone DETECTORS -->
     <!-- ================================= -->
 
-    <inductionLoop id="det_pretaper_0"
+    <inductionLoop id="det_alert_0"
                    lane="33654598_wz_alert_0"
                    pos="50"
                    freq="900"
                    file="detector_output.xml"/>
 
-    <inductionLoop id="det_pretaper_1"
+    <inductionLoop id="det_alert_1"
                    lane="33654598_wz_alert_1"
                    pos="50"
                    freq="900"
                    file="detector_output.xml"/>
 
-    <inductionLoop id="det_pretaper_2"
+    <inductionLoop id="det_alert_2"
                    lane="33654598_wz_alert_2"
                    pos="50"
                    freq="900"
                    file="detector_output.xml"/>
 
-    <inductionLoop id="det_pretaper_3"
+    <inductionLoop id="det_alert_3"
                    lane="33654598_wz_alert_3"
                    pos="50"
                    freq="900"
@@ -100,7 +100,7 @@
     <!-- MERGING ZONE CONGESTION -->
     <!-- ================================= -->
 
-    <laneAreaDetector id="workzone_congestion"
+    <laneAreaDetector id="wz_merging_lane0"
                       lane="33654598_wz_merging_0"
                       pos="0"
                       endPos="120"
