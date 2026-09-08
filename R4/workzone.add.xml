@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additional>
+
+    <rerouter id="workzone_rerouter"
+              edges="33654598_wz_merging">
+
+        <interval begin="0" end="3649">
+
+            <closingLaneReroute
+                id="33654598_wz_downstream_0"/>
+
+        </interval>
+
+    </rerouter>
+
+
+
+   <!-- ================================= -->
+   <!-- WORK ZONE ACTIVITY AREA SPEED CONTROL -->
+   <!-- ================================= -->
+
+   <variableSpeedSign id="wz_activity_speed"
+                   lanes="33654598_wz_downstream_1">
+
+      <!-- Activate 25 mph work-zone speed -->
+      <step time="0" speed="11.18"/>
+
+      <!-- Restore original network speed at the end -->
+      <step time="3649" speed="-1"/>
+
+   </variableSpeedSign>
+	
+
+
+
+
+
+    <!-- ================================= -->
+    <!-- UPSTREAM DETECTORS -->
+    <!-- ================================= -->
+
+    <inductionLoop id="det_upstream_1"
+                   lane="33654598_wz_upstream_1"
+                   pos="150"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_upstream_2"
+                   lane="33654598_wz_upstream_2"
+                   pos="150"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_upstream_3"
+                   lane="33654598_wz_upstream_3"
+                   pos="150"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_upstream_4"
+                   lane="33654598_wz_upstream_4"
+                   pos="150"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+
+    <!-- ================================= -->
+    <!-- Alert Zone DETECTORS -->
+    <!-- ================================= -->
+
+    <inductionLoop id="det_alert_0"
+                   lane="33654598_wz_alert_0"
+                   pos="50"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_alert_1"
+                   lane="33654598_wz_alert_1"
+                   pos="50"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_alert_2"
+                   lane="33654598_wz_alert_2"
+                   pos="50"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_alert_3"
+                   lane="33654598_wz_alert_3"
+                   pos="50"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+
+    <!-- ================================= -->
+    <!-- DOWNSTREAM DETECTORS -->
+    <!-- ================================= -->
+
+    <inductionLoop id="det_downstream_0"
+                   lane="33654598_wz_downstream_0"
+                   pos="50"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_downstream_1"
+                   lane="33654598_wz_downstream_1"
+                   pos="50"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_downstream_2"
+                   lane="33654598_wz_downstream_2"
+                   pos="50"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+    <inductionLoop id="det_downstream_3"
+                   lane="33654598_wz_downstream_3"
+                   pos="50"
+                   freq="900"
+                   file="detector_output.xml"/>
+
+
+    <!-- ================================= -->
+    <!-- MERGING ZONE CONGESTION -->
+    <!-- ================================= -->
+
+    <laneAreaDetector id="wz_merging_lane0"
+                      lane="33654598_wz_merging_0"
+                      pos="0"
+                      endPos="120"
+                      freq="900"
+                      file="lanearea_output.xml"/>
+    <laneAreaDetector id="wz_merging_lane1"
+                  lane="33654598_wz_merging_1"
+                  pos="0"
+                  endPos="120"
+                  freq="900"
+                  file="lanearea_output.xml"/>
+
+   <laneAreaDetector id="wz_merging_lane2"
+                  lane="33654598_wz_merging_2"
+                  pos="0"
+                  endPos="120"
+                  freq="900"
+                  file="lanearea_output.xml"/>
+
+   <laneAreaDetector id="wz_merging_lane3"
+                  lane="33654598_wz_merging_3"
+                  pos="0"
+                  endPos="120"
+                  freq="900"
+                  file="lanearea_output.xml"/>
+
+
+
+
+</additional>
