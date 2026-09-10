@@ -2,23 +2,30 @@
 
 <routes>
 
-    <!-- Passenger vehicle -->
-    <vType id="HumanVeh"
-           vClass="passenger"
-	   carFollowModel="Krauss"
-	   laneChangeModel="LC2013"
+    <!-- =========================================================
+         R5: 100% CAV
+         Car-following: SUMO ACC
+         Initial desired time headway: 1.1 s
+         Lane-changing: LC2013
+         ========================================================= -->
 
+    <vType id="CAV"
+           vClass="passenger"
+           carFollowModel="ACC"
+           laneChangeModel="LC2013"
            accel="2.0"
            decel="4.5"
-	   emergencyDecel="9.0"
-
-	   tau="2.0"
-           sigma="0.5"
+           emergencyDecel="9.0"
+           tau="1.5"
            minGap="2.5"
-           maxSpeed="26.82"/>
+           maxSpeed="26.82"
+	   color="red"/>
 
 
-    <!-- Route through the smart work zone -->
+    <!-- =========================================================
+         Existing calibrated I-75 SB work-zone route
+         DO NOT change the route from R4
+         ========================================================= -->
 
     <route id="I75_SB_workzone"
            edges="33654598_wz_upstream
@@ -27,10 +34,13 @@
                   33654598_wz_downstream"/>
 
 
-    <!-- 6:45–7:00 AM -->
+    <!-- =========================================================
+         Calibrated traffic demand
+         Same as R4
+         ========================================================= -->
 
     <flow id="I75_0645"
-          type="HumanVeh"
+          type="CAV"
           route="I75_SB_workzone"
           begin="0"
           end="900"
@@ -38,11 +48,8 @@
           departLane="random"
           departSpeed="max"/>
 
-
-    <!-- 7:00–7:15 AM -->
-
     <flow id="I75_0700"
-          type="HumanVeh"
+          type="CAV"
           route="I75_SB_workzone"
           begin="900"
           end="1800"
@@ -50,11 +57,8 @@
           departLane="random"
           departSpeed="max"/>
 
-
-    <!-- 7:15–7:30 AM -->
-
     <flow id="I75_0715"
-          type="HumanVeh"
+          type="CAV"
           route="I75_SB_workzone"
           begin="1800"
           end="2700"
@@ -62,11 +66,8 @@
           departLane="random"
           departSpeed="max"/>
 
-
-    <!-- 7:30–7:45 AM -->
-
     <flow id="I75_0730"
-          type="HumanVeh"
+          type="CAV"
           route="I75_SB_workzone"
           begin="2700"
           end="3600"
